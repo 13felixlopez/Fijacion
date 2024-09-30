@@ -6,13 +6,13 @@
 
     <Grid BackgroundColor="Wheat" RowDefinitions="80,*,90">
         <Grid BackgroundColor="PaleVioletRed" ColumnDefinitions="90,*">
-            <Image Source="saco.png" />
+            <Image Source="escribir.png" />
             <Label
                 Grid.Column="1"
                 FontAttributes="Bold"
                 FontSize="25"
                 HorizontalTextAlignment="Center"
-                Text="Precios Fijación 24/25"
+                Text="Datos Recibo 24/25"
                 TextColor="Black"
                 VerticalTextAlignment="Center" />
         </Grid>
@@ -36,7 +36,7 @@
                         SelectedIndexChanged="PProducto_SelectedIndexChanged"
                         TextColor="Black"
                         VerticalOptions="Center"
-                        WidthRequest="300" />
+                        WidthRequest="300" BackgroundColor="LightYellow"/>
                 </Grid>
                 <Grid Grid.Row="1" ColumnDefinitions="Auto,*">
                     <Label
@@ -56,7 +56,7 @@
                         Keyboard="Numeric"
                         Placeholder="Cant. de sacos"
                         TextColor="Black"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" BackgroundColor="LightYellow"/>
                 </Grid>
                 <Grid Grid.Row="2" ColumnDefinitions="Auto,*,Auto,*">
                     <Label
@@ -70,13 +70,15 @@
                     <Entry
                         x:Name="TxtPesoBruto"
                         Grid.Column="1"
-                        FontSize="18"
+                        FontSize="17"
                         HorizontalOptions="StartAndExpand"
                         Keyboard="Numeric"
-                        Placeholder="Peso en kilos"
+                        Placeholder="KG"
+                        WidthRequest="100"
+                        HorizontalTextAlignment="Center"
                         TextChanged="TxtPesoBruto_TextChanged"
                         TextColor="Black"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" BackgroundColor="LightYellow" />
                     <Label
                         Grid.Column="2"
                         Margin="10,0"
@@ -223,7 +225,7 @@
                         HorizontalOptions="End"
                         Text="Conv POA KG:"
                         TextColor="Black"
-                        VerticalTextAlignment="Center" />
+                        VerticalTextAlignment="Center"/>
                     <Label
                         x:Name="LblConvPOAKG"
                         Grid.Row="1"
@@ -231,7 +233,7 @@
                         HorizontalOptions="CenterAndExpand"
                         Text="--"
                         TextColor="Black"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" BackgroundColor="LightGreen" />
                     <Label
                         Grid.Column="2"
                         Margin="10,0"

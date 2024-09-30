@@ -4,14 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
-    <ApplicationIcon>bag.ico</ApplicationIcon>
     <Title>Precios de Fijación</Title>
     <Authors>Felix Lopez</Authors>
     <Company>ofi</Company>
     <Product>Precio de Fijación</Product>
     <Description>Aplicación de calculo de precio de fijación para Café</Description>
     <Copyright>2024</Copyright>
-    <PackageIcon>saco.png</PackageIcon>
+    <PackageIcon>escribir.png</PackageIcon>
+    <ApplicationIcon>datos.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,18 +20,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bag.ico" />
+    <Content Include="datos.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\Fijacion.Android\Resources\drawable\saco.png">
+    <None Include="..\Fijacion.Android\Resources\mipmap-hdpi\escribir.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
   </ItemGroup>
 </Project>
